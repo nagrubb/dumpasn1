@@ -15,7 +15,7 @@ dumpasn1: dumpasn1.c
 install:
 	mkdir -p $(DESTDIR)$(bindir)
 	mkdir -p $(DESTDIR)$(sysconfdir)
-	$(INSTALL_PROGRAM) -v -m 0755 -D dumpasn1 $(DESTDIR)$(bindir)/dumpasn1
+	$(INSTALL_PROGRAM) -v -m 0755 -dumpasn1 $(DESTDIR)$(bindir)/dumpasn1
 	$(INSTALL_DATA) -v dumpasn1.cfg $(DESTDIR)$(sysconfdir)/dumpasn1.cfg
 
 clean:
